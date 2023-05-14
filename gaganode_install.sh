@@ -2,8 +2,8 @@
 
 cpu_arch="$(uname -m)"
 echo "cpu_arch=$cpu_arch"
-AMD="https://assets.coreservice.io/public/package/22/app/1.0.3/app-1_0_3.tar.gz"
-ARM="https://assets.coreservice.io/public/package/24/app/1.0.3/app-1_0_3.tar.gz"
+AMD="https://assets.coreservice.io/public/package/60/app-market-gaga-pro/1.0.4/app-market-gaga-pro-1_0_4.tar.gz"
+ARM="https://assets.coreservice.io/public/package/61/app-market-gaga-pro/1.0.4/app-market-gaga-pro-1_0_4.tar.gz"
 
 if [ "${cpu_arch}" = "x86_64" ]; then
 DOWNLOADLINK=$AMD
