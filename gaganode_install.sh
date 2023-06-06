@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cpu_arch="$(uname -m)"
 echo "cpu_arch=$cpu_arch"
