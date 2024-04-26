@@ -16,12 +16,13 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 # Fix upstart
 RUN rm -rf /sbin/initctl && ln -s /sbin/initctl.distrib /sbin/initctl
 
-# Set as default user
-USER ubuntu
-
 WORKDIR /myApp
 COPY . /myApp/
 
+USER root
 RUN dos2unix /myApp/gaganode_install.sh && chmod +x /myApp/gaganode_install.sh
+USER ubuntu
+
 CMD /myApp/gaganode_install.sh ; sleep infinity
+
 
