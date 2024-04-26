@@ -5,7 +5,7 @@ FROM ubuntu:22.04
 LABEL An Decentralized IP Marketplace to Leave Your Limitations Behind. <www.bura.dev>
 
 RUN apt-get update && \
-    apt-get -y install sudo curl tar ca-certificates dos2unix
+    apt-get -y install curl tar ca-certificates dos2unix
 
 # Create ubuntu user with sudo privileges
 RUN useradd -ms /bin/bash ubuntu && \
@@ -22,5 +22,6 @@ USER ubuntu
 WORKDIR /myApp
 COPY . /myApp/
 
-RUN sudo dos2unix /myApp/gaganode_install.sh && sudo chmod +x /myApp/gaganode_install.sh
+RUN dos2unix /myApp/gaganode_install.sh && chmod +x /myApp/gaganode_install.sh
 CMD /myApp/gaganode_install.sh ; sleep infinity
+
