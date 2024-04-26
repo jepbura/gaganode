@@ -14,7 +14,7 @@ Define the following environment variable to configure Gaga Node.
 
 ## For example
 
-`docker run -d -e DOWNLOADLINK=https://assets.coreservice.io/public/package/60/app-market-gaga-pro/1.0.4/app-market-gaga-pro-1_0_4.tar.gz -e FILENAME=apphub-linux-amd64.tar.gz -e TOKEN=xxxxxxxxx --name meson jepbura/gaganode:latest`
+`docker run -d -e DOWNLOADLINK=https://assets.coreservice.io/public/package/60/app-market-gaga-pro/1.0.4/app-market-gaga-pro-1_0_4.tar.gz -e FILENAME=apphub-linux-amd64.tar.gz -e TOKEN=xxxxxxxxx --name gaganode jepbura/gaganode:latest`
 
 ## Docker hub
 
