@@ -4,6 +4,9 @@ on:
   push:
     branches: [master]
 
+env:
+  VERSION: 3.0.0
+
 jobs:
   build:
     runs-on: ubuntu-latest
