@@ -1,11 +1,9 @@
-ARG VERSION=3.0.0
-
 FROM ubuntu:22.04
 
 LABEL An Decentralized IP Marketplace to Leave Your Limitations Behind. <www.bura.dev>
 
 RUN apt-get update && \
-    apt-get -y install curl tar ca-certificates dos2unix
+    apt-get -y install curl tar ca-certificates dos2unix sudo
 
 # Create ubuntu user with sudo privileges
 RUN useradd -ms /bin/bash ubuntu && \
@@ -24,5 +22,3 @@ RUN dos2unix /myApp/gaganode_install.sh && chmod +x /myApp/gaganode_install.sh
 USER ubuntu
 
 CMD /myApp/gaganode_install.sh ; sleep infinity
-
-

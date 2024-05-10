@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 env:
-  VERSION: 3.0.0
+  VERSION: 3.1.0
 
 jobs:
   build_latest:
